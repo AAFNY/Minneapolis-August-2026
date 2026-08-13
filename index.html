@@ -172,6 +172,14 @@
   .links a:hover{text-decoration:underline;}
   .links a::after{content:"  \2197";color:var(--ink-2);font-weight:400;}
 
+  .plist{display:flex;flex-direction:column;}
+  .plist a{display:block;padding:11px 0;border-top:1px solid var(--line);text-decoration:none;}
+  .lk-group + a{border-top:none;}
+  .plist a strong{color:var(--river);font-weight:600;font-size:14.5px;}
+  .plist a strong::after{content:"  \2197";color:var(--ink-2);font-weight:400;font-size:12px;}
+  .plist a .lk-note{display:block;color:var(--ink-2);font-weight:400;font-size:12.5px;margin-top:2px;}
+  .plist a:hover strong{text-decoration:underline;}
+
   footer{text-align:center;margin-top:36px;color:var(--ink-2);font-size:12.5px;font-family:"Space Mono",monospace;letter-spacing:.04em;}
 
   a{color:var(--river);text-underline-offset:3px;}
@@ -235,14 +243,14 @@
   <article class="day fade">
     <div class="day-head">
       <span class="day-num">FRI · 14</span>
-      <h2>Andrea &amp; Jared's day, then dinner with Chris<span class="sub">On their own until evening</span></h2>
-      <div class="tags"><span class="tag">Their day</span><span class="tag">Pilates AM</span><span class="tag">Chris &amp; Gordon PM?</span></div>
+      <h2>Andrea &amp; Jared's day, then dinner at Bellecour<span class="sub">On their own until evening</span></h2>
+      <div class="tags"><span class="tag">Their day</span><span class="tag">R&ecirc;ve 7:30 waitlist</span><span class="tag">Bellecour 7pm</span></div>
     </div>
     <div class="rows">
-      <div class="row"><div class="time">AM</div><div><p class="what">Andrea does Pilates at Sunna</p><p class="note">Sunna is a short ride across the river on St. Anthony Main. Reserving ahead (required for reformer). Friday time still to confirm. A North Loop studio is an option too if closer is better.</p></div></div>
+      <div class="row"><div class="time">7:30</div><div><p class="what">Andrea: reformer at R&ecirc;ve Studios (waitlist)</p><p class="note">120 N 1st Ave, Suite 300, North Loop, a short walk from the Hewing. On the 7:30 waitlist. The Saturday 9:00 class is the confirmed one.</p></div></div>
       <div class="row"><div class="time">10:30</div><div><p class="what">Andrea visits Todd at MartinPatrick 3</p><p class="note">In the North Loop, steps from the Hewing. Opens at 10:00. Lunch nearby after.</p></div></div>
-      <div class="row"><div class="time">PM</div><div><p class="what">Minneapolis Institute of Art (Mia)</p><p class="note">Free, calm, world-class. See open decisions, in case it was the Walker.</p></div></div>
-      <div class="row"><div class="time">Eve</div><div><p class="what">Dinner with Chris &amp; Gordon</p><p class="note">TBD. Chris floated hosting. Wherever works for them.</p></div></div>
+      <div class="row"><div class="time">PM</div><div><p class="what">Minneapolis Institute of Art (Mia)</p><p class="note">Free, calm, world-class. The museum you're back to revisit.</p></div></div>
+      <div class="row"><div class="time">7:00</div><div><p class="what">Dinner at Bellecour with Todd, Chris &amp; Gordon</p><p class="note">Gavin Kaysen's French bistro in the North Loop, a short walk from the Hewing. Table for five. Reserve ahead on Tock.</p></div></div>
     </div>
   </article>
 
@@ -251,11 +259,12 @@
     <div class="day-head">
       <span class="day-num">SAT · 15</span>
       <h2>Market, the Walker, Gai Noi<span class="sub">A market morning, art in the afternoon, a group dinner</span></h2>
-      <div class="tags"><span class="tag">Market AM</span><span class="tag">With Chris PM</span></div>
+      <div class="tags"><span class="tag">R&ecirc;ve 9am</span><span class="tag">Market</span><span class="tag">With Chris PM</span></div>
     </div>
     <div class="rows">
-      <div class="row"><div class="time">AM</div><div><p class="what">To the Mill City Farmers Market</p><p class="note">A short ride or a riverfront walk from the Hewing, across the Stone Arch. Over 100 farmers, food makers and artists, 8:00 to 1:00. Early is best for calm, coffee and river views.</p></div></div>
-      <div class="row"><div class="time">Late AM</div><div><p class="what">Guthrie Endless Bridge, steps away</p><p class="note">The free public deck cantilevered over the river. Mill City Museum next door if there's time. Then back to the hotel to rest before the afternoon.</p></div></div>
+      <div class="row"><div class="time">9:00</div><div><p class="what">Andrea: reformer at R&ecirc;ve Studios</p><p class="note">Confirmed 9:00 class. 120 N 1st Ave, Suite 300, North Loop, a short walk from the Hewing.</p></div></div>
+      <div class="row"><div class="time">Late AM</div><div><p class="what">To the Mill City Farmers Market</p><p class="note">A short ride or riverfront walk from the Hewing, across the Stone Arch. Open 8:00 to 1:00, so there's time after class. Coffee and river views.</p></div></div>
+      <div class="row"><div class="time">Midday</div><div><p class="what">Guthrie Endless Bridge, steps away</p><p class="note">The free public deck cantilevered over the river. Mill City Museum next door if there's time. Then back to the hotel to rest before the afternoon.</p></div></div>
       <div class="row"><div class="time">Late PM</div><div><p class="what">Walker galleries &amp; the Sculpture Garden with Chris</p><p class="note">Spoonbridge and Cherry. Calm and real art. No mini-golf.</p></div></div>
       <div class="row"><div class="time">5:00</div><div><p class="what">Gai Noi, Loring Park (Chris's idea)</p><p class="note">If it suits the group. No reservations, so arrive together right at 5:00 or expect a wait. Five minutes from the Walker.</p><div class="tags" style="margin-top:8px"><span class="tag warn">Arrive 5:00 sharp</span><span class="tag warn">Loud &amp; lively</span></div></div></div>
     </div>
@@ -292,10 +301,9 @@
 
   <!-- OPEN DECISIONS -->
   <section class="callout fade" aria-label="Open decisions">
-    <p class="eyebrow">Two things to lock</p>
-    <h3>Open decisions</h3>
-    <div class="decision"><span class="n">01</span><p><strong>The museum.</strong> Mia is set for Friday. If the one to revisit was the Walker, it moves to Friday and Saturday swaps to something else.</p></div>
-    <div class="decision"><span class="n">02</span><p><strong>Sunday dinner.</strong> A North Loop patio near the hotel, or a St. Paul reservation with Chris at Myriel.</p></div>
+    <p class="eyebrow">One thing to lock</p>
+    <h3>Open decision</h3>
+    <div class="decision"><span class="n">01</span><p><strong>Sunday dinner.</strong> Likely treating Chris and Gordon to Myriel in St. Paul, the spot Chris has wanted to try. A low-key North Loop patio is the easy alternative.</p></div>
   </section>
 
   <!-- TO BOOK -->
@@ -303,12 +311,41 @@
     <p class="eyebrow">Before the trip</p>
     <h3>To book</h3>
     <ul>
+      <li><span class="box" aria-hidden="true"></span><span><strong>Bellecour</strong> Friday, 7:00 PM, table for five. <span class="detail">Reserve on Tock (Andrea, Jared, Todd, Chris, Gordon).</span></span></li>
       <li><span class="box" aria-hidden="true"></span><span><strong>Restaurant Alma</strong> for one dinner, if wanted. <span class="detail">Reserve ahead.</span></span></li>
       <li><span class="box" aria-hidden="true"></span><span><strong>Sunday St. Paul dinner</strong> (Myriel) if that's the route. <span class="detail">Reserve ahead.</span></span></li>
       <li><span class="box" aria-hidden="true"></span><span><strong>Gai Noi</strong> takes no reservations. <span class="detail">Arrive at 5:00 with the whole party.</span></span></li>
-      <li><span class="box" aria-hidden="true"></span><span><strong>Pilates:</strong> Sunna on Friday, a lakes studio on Sunday. <span class="detail">Reserve ahead and confirm the class times.</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span><strong>Pilates:</strong> R&ecirc;ve Sat 9:00 (confirmed), Fri 7:30 waitlist, a lakes studio Sunday. <span class="detail">Confirm the Sunday time.</span></span></li>
       <li><span class="box" aria-hidden="true"></span><span><strong>Bikes at Lake Harriet</strong> are walk-up. <span class="detail">No booking needed.</span></span></li>
     </ul>
+  </section>
+
+  <!-- GIFTS -->
+  <section class="book fade" aria-label="Gifts to bring" style="margin-top:26px;">
+    <p class="eyebrow">Private &middot; to bring</p>
+    <h3>Gifts &amp; wine</h3>
+    <ul>
+      <li><span class="box" aria-hidden="true"></span><span><strong>Chris &amp; Gordon:</strong> Maggie Haberman's <em>Regime Change</em>, bringing from home, plus a bottle of wine. <span class="detail">$25 to $40. Chianti Classico, Barbera d'Alba, or Oregon Pinot Noir.</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span><strong>Todd:</strong> a bottle of wine. <span class="detail">$50 to $75. Grower Champagne (Pierre P&eacute;ters, Chartogne-Taillet) or a Barolo or Barbaresco.</span></span></li>
+      <li><span class="box" aria-hidden="true"></span><span><strong>Buy the wine in Minneapolis:</strong> Surdyk's in Northeast, about 10 min from the Hewing, or France 44. <span class="detail">Ask staff for the best bottle in the style and price.</span></span></li>
+    </ul>
+  </section>
+
+  <!-- PILATES -->
+  <section class="book fade" aria-label="Pilates studios" style="margin-top:26px;">
+    <p class="eyebrow">Movement</p>
+    <h3>Pilates studios</h3>
+    <div class="plist">
+      <p class="lk-group">Walk from the Hewing · North Loop</p>
+      <a href="https://www.purposefulpilatesmn.com" target="_blank" rel="noopener"><strong>Purposeful Pilates</strong><span class="lk-note">Classical and accessible. Closest in spirit to home. Call about a first-visit intro.</span></a>
+      <a href="https://www.revestudios.co/northloop" target="_blank" rel="noopener"><strong>R&ecirc;ve Studios</strong><span class="lk-note">Sat 9:00 confirmed, Fri 7:30 waitlist. 120 N 1st Ave, Suite 300, ~6 to 8 min walk from the Hewing.</span></a>
+      <a href="https://solidcore.co/studios/north-loop" target="_blank" rel="noopener"><strong>[solidcore]</strong><span class="lk-note">Megaformer, high intensity and low impact. Easy drop-in, fitness-forward.</span></a>
+
+      <p class="lk-group">Across town</p>
+      <a href="https://www.spacesunna.com" target="_blank" rel="noopener"><strong>Sunna</strong><span class="lk-note">Classical plus Gyrokinesis. A short ride across the river if you want a change.</span></a>
+      <a href="https://www.pilates-underground.com" target="_blank" rel="noopener"><strong>Pilates Underground</strong><span class="lk-note">Sunday option. Classical, refined, in Uptown near the lakes.</span></a>
+      <a href="https://www.clubpilates.com/location/minneapolislakes" target="_blank" rel="noopener"><strong>Club Pilates Lakes</strong><span class="lk-note">Sunday backup. Reformer, fuller weekend schedule, by the lakes.</span></a>
+    </div>
   </section>
 
   <!-- PLACES & LINKS -->
@@ -319,12 +356,9 @@
       <p class="lk-group">Stay &amp; eat</p>
       <a href="https://hewinghotel.com" target="_blank" rel="noopener">Hewing Hotel</a>
       <a href="https://www.gainoimpls.com" target="_blank" rel="noopener">Gai Noi</a>
+      <a href="https://www.exploretock.com/bellecour-bistro" target="_blank" rel="noopener">Bellecour, Friday dinner</a>
       <a href="https://almampls.com" target="_blank" rel="noopener">Restaurant Alma, for a dinner</a>
       <a href="https://www.breadandpickle.com" target="_blank" rel="noopener">Bread &amp; Pickle, Lake Harriet</a>
-
-      <p class="lk-group">Move</p>
-      <a href="https://www.spacesunna.com" target="_blank" rel="noopener">Sunna Pilates, Friday</a>
-      <a href="https://www.pilates-underground.com" target="_blank" rel="noopener">Pilates Underground, Sunday</a>
 
       <p class="lk-group">See &amp; do</p>
       <a href="https://martinpatrick3.com" target="_blank" rel="noopener">MartinPatrick 3</a>
